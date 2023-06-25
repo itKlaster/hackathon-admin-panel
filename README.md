@@ -1,57 +1,53 @@
-# 🚀 Getting started with Strapi
-
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+# 🚀 Начало работы с административным сервером
 
 ### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+Запустите ваше приложение с поддержкой быстрой перезагрузки, в случае активной разработки.
 
 ```
 npm run develop
-# or
+# или
 yarn develop
 ```
 
 ### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+Запустите приложение в режиме PRODUCTION, не позволяя администраторам менять структуру, а только контент.
 
 ```
 npm run start
-# or
+# или
 yarn start
 ```
 
 ### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+Соберите проект для его дальнейшего запуска, требуется при сменах конфигов.
 
 ```
 npm run build
-# or
+# или
 yarn build
 ```
 
-## ⚙️ Deployment
+## ✨ Связь сервисов
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+Данный ресурс является одним из главных, так как является дистрибьютером данных, без его наличия все продукты будут бесполезны.
 
-## 📚 Learn more
+- Административный сервис **(Вы сейчас тут)** - Middleware между всеми нижеперечисленными сервисами! Позволяет вам удобно просматривать информацию, менять ее, постить или скрывать, тут все и хранится.
+- Панель редактора - Специальный сайт, где ваши редакторы смогут быстро создать статью по видео из YouTube
+- Панель потребителя или же Блог - Сайт, где ваши посетители смогут просматривать созданные статьи!
+- Слушатель и Конвертатор - Сердце экосистемы, которое по запросу сгенерирует вам пост любой длины
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+## ⚙️ Развертывание
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+Проект по умолчанию попытается выйти на 1337 порт. Используя `Nginx: the High-Performance Web Server and Reverse Proxy` и создав виртуальный сервер, можно развернуть приложение на домене.
 
-## ✨ Community
+## 📚 Документация по Strapi
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+- [Центр ресурсов.](https://strapi.io/resource-center) - Центр ресурсов.
+- [Strapi документация](https://docs.strapi.io) - Оффициальная Strapi документация.
+- [Strapi туториалы](https://strapi.io/tutorials) - Список туториалов по использованию админ панели созданный командой Strapi и комьюнити.
+- [Strapi блог](https://docs.strapi.io) - Оффициальный блог Strapi созданный командой Strapi и комьюнити.
 
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+Пусть разработчик не забывает проверять [Strapi GitHub репозиторий](https://github.com/strapi/strapi). Порой там выходят классные обновления!
