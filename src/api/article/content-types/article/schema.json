@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Статьи"
+    "displayName": "Статьи",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,9 @@
   "attributes": {
     "data": {
       "type": "json"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
